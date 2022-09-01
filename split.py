@@ -6,7 +6,7 @@ https://www.geeksforgeeks.org/python-pil-image-split-method/#:~:text=image%20edi
 from PIL import Image
 
 # opening a multiband image (RGB specifically)
-image = Image.open(r"images/ImagenUsar.jpg")
+image = Image.open("images/ImagenUsar.jpg")
 
 # split() method
 # this will split the image in individual bands and return a tuple
@@ -18,5 +18,5 @@ green = image[1]
 blue = image[2]
 
 red.save("images/red.jpg")
-green.save("images/green.jp")
+green.save("images/green.jpg")
 blue.save("images/blue.jpg")

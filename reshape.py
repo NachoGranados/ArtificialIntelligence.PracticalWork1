@@ -37,10 +37,9 @@ image = Image.open('images/ImagenUsar.jpg')
 imageArray = np.asarray(image)
 
 # get image array dimensions
-dimensions = imageArray.shape
-rows = dimensions[0]
-columns = dimensions[1]
-colors = dimensions[2]
+rows = imageArray.shape[0]
+columns = imageArray.shape[1]
+colors = imageArray.shape[2]
 
 print(" ")
 print(imageArray)
